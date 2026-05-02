@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aura Salon | Delhi's Premier Sanctuary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#fafaf5",
+                        "outline": "#747878",
+                        "tertiary-fixed": "#f2ded7",
+                        "secondary-fixed": "#ffdea5",
+                        "on-primary-fixed": "#1c1b1b",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-error": "#ffffff",
+                        "on-surface": "#1a1c19",
+                        "tertiary": "#000000",
+                        "on-tertiary-fixed": "#231915",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "surface-tint": "#5f5e5e",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#858383",
+                        "on-surface-variant": "#444748",
+                        "secondary": "#775a19",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#51443f",
+                        "on-secondary-container": "#785a1a",
+                        "surface-dim": "#dadad5",
+                        "secondary-container": "#fed488",
+                        "primary-container": "#1c1b1b",
+                        "outline-variant": "#c4c7c7",
+                        "primary": "#000000",
+                        "on-secondary-fixed": "#261900",
+                        "primary-fixed": "#e5e2e1",
+                        "background": "#fafaf5",
+                        "surface-container-low": "#f4f4ef",
+                        "surface-container-high": "#e8e8e3",
+                        "inverse-surface": "#2f312e",
+                        "on-tertiary-container": "#91807a",
+                        "surface-container-highest": "#e3e3de",
+                        "surface-variant": "#e3e3de",
+                        "inverse-primary": "#c8c6c5",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#d6c3bc",
+                        "inverse-on-surface": "#f1f1ec",
+                        "surface": "#fafaf5",
+                        "tertiary-container": "#231915",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#eeeee9",
+                        "on-primary-fixed-variant": "#474746",
+                        "on-background": "#1a1c19",
+                        "amber-600": "#d97706",
+                        "amber-500": "#f59e0b",
+                        "amber-700": "#b45309",
+                        "stone-50": "#fafaf9",
+                        "stone-100": "#f5f5f4",
+                        "stone-200": "#e7e5e4",
+                        "stone-500": "#78716c",
+                        "stone-600": "#57534e",
+                        "stone-800": "#292524",
+                        "stone-900": "#1c1917",
+                        "stone-950": "#0c0a09"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-padding": "120px",
+                        "unit": "8px",
+                        "container-max": "1280px",
+                        "margin-page": "64px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "button": ["Inter"],
+                        "headline-sm": ["Playfair Display"],
+                        "label-caps": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "serif": ["Playfair Display"],
+                        "sans": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "button": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-surface-bright text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopAppBar (Web) -->
+<header class="hidden md:flex justify-between items-center w-full px-6 py-5 sticky top-0 z-50 bg-stone-50/80 dark:bg-stone-950/80 backdrop-blur-md border-b border-stone-200/50 dark:border-stone-800/50">
+<div class="text-xl font-serif tracking-[0.2em] text-stone-900 dark:text-stone-50 uppercase font-bold">
+            AURA SALON
+        </div>
+<nav class="flex gap-8 items-center">
+<a class="font-sans tracking-widest uppercase text-xs font-medium text-amber-600 dark:text-amber-500 border-b border-amber-600 pb-1 hover:text-amber-700 dark:hover:text-amber-400 transition-all duration-500 ease-in-out" href="#">Home</a>
+<a class="font-sans tracking-widest uppercase text-xs font-medium text-stone-600 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-400 transition-all duration-500 ease-in-out" href="#">Services</a>
+<a class="font-sans tracking-widest uppercase text-xs font-medium text-stone-600 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-400 transition-all duration-500 ease-in-out" href="#">Bridal</a>
+<a class="font-sans tracking-widest uppercase text-xs font-medium text-stone-600 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-400 transition-all duration-500 ease-in-out" href="#">Portfolio</a>
+<a class="font-sans tracking-widest uppercase text-xs font-medium text-stone-600 dark:text-stone-400 hover:text-amber-700 dark:hover:text-amber-400 transition-all duration-500 ease-in-out" href="#">Contact</a>
+</nav>
+<button class="bg-primary text-on-primary font-button px-6 py-3 rounded uppercase tracking-widest hover:bg-surface-tint transition-colors">
+            Book Appointment
+        </button>
+</header>
+<!-- SideNavBar (Mobile - Reinterpreted as a bottom nav or simplified side menu for mobile, but guidelines say use BottomNavBar for mobile. Creating a standard mobile nav based on SideNav JSON concepts for structural compliance) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full bg-stone-50 dark:bg-stone-950 border-t border-stone-200 dark:border-stone-800 z-50 shadow-2xl dark:shadow-stone-900/50 flex justify-around items-center py-3 px-4 pb-safe">
+<a class="flex flex-col items-center gap-1 text-amber-600 font-medium" href="#">
+<span class="material-symbols-outlined" data-icon="home" data-weight="fill">home</span>
+<span class="text-[10px] font-sans tracking-wide">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-stone-500 dark:text-stone-400 hover:text-stone-900 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="spa">spa</span>
+<span class="text-[10px] font-sans tracking-wide">Services</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-stone-500 dark:text-stone-400 hover:text-stone-900 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+<span class="text-[10px] font-sans tracking-wide">Portfolio</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-stone-500 dark:text-stone-400 hover:text-stone-900 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+<span class="text-[10px] font-sans tracking-wide">Bridal</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-stone-500 dark:text-stone-400 hover:text-stone-900 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="text-[10px] font-sans tracking-wide">Contact</span>
+</a>
+</nav>
+<main class="flex-grow pb-24 md:pb-0">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center justify-center px-6 md:px-margin-page bg-surface-container-low overflow-hidden">
+<div class="absolute inset-0 w-full h-full">
+<img alt="Aura Salon Interior" class="w-full h-full object-cover opacity-60" data-alt="A sophisticated, high-end salon interior bathed in soft, natural daylight filtering through sheer curtains. The space features minimalist aesthetics with warm beige tones, polished marble floors, and elegant champagne gold accents. Plush seating and pristine styling stations convey a quiet luxury atmosphere, designed to evoke serenity and exclusivity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWf7dkd1yKDf4HxOuQ8rHekAM2FccEN6jK43fDWgpy2S_SkQLLxdZ1aEH33-TsXCUzyDezbsDbjG2vuDdlJk0rTZEmNtJ1XAW0g1tEXl_iARv2SQDUfpKQp0Te-SKFIFvUAF3Rxja0ZfhTwJdShfclSr4nHe5gbpJc_ZFrlNvONFwocNEcHzvocfpOdHuTx23bae0KtAaDdzcDw_0qfJV-VuxYzRH0mSuvym_kSXc6bWt5_-W3hc2BGE40YPKP8CKPpu37zd41di8"/>
+<div class="absolute inset-0 bg-gradient-to-b from-surface-bright/40 to-surface-bright/90"></div>
+</div>
+<div class="relative z-10 max-w-3xl text-center space-y-8 mt-16 md:mt-0">
+<h1 class="font-display-lg text-display-lg text-on-surface">Aura Salon: Delhi's Premier Sanctuary</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto">Experience quiet luxury. Our bespoke treatments and serene atmosphere redefine elegance in the heart of the city.</p>
+<div class="pt-8">
+<button class="bg-primary text-on-primary font-button text-button px-10 py-4 rounded-none uppercase tracking-[0.15em] hover:bg-surface-tint transition-all duration-300">
+                        Book an Appointment
+                    </button>
+</div>
+</div>
+</section>
+<!-- Services Menu -->
+<section class="py-section-padding px-6 md:px-margin-page max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg mb-4">Curated Services</h2>
+<div class="w-12 h-px bg-amber-600/50 mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-x-24 gap-y-16">
+<!-- Hair Care -->
+<div class="space-y-8">
+<h3 class="font-headline-md text-headline-md border-b border-taupe-200 pb-4">Hair Care</h3>
+<ul class="space-y-6">
+<li class="flex justify-between items-end border-b border-surface-dim pb-2 group cursor-pointer hover:border-amber-600/30 transition-colors">
+<div class="space-y-1">
+<span class="block font-headline-sm text-headline-sm group-hover:text-amber-700 transition-colors">Bespoke Cut &amp; Style</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">60 mins</span>
+</div>
+<span class="font-body-md text-body-md">₹3,500</span>
+</li>
+<li class="flex justify-between items-end border-b border-surface-dim pb-2 group cursor-pointer hover:border-amber-600/30 transition-colors">
+<div class="space-y-1">
+<span class="block font-headline-sm text-headline-sm group-hover:text-amber-700 transition-colors">Balayage Colouring</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">180 mins</span>
+</div>
+<span class="font-body-md text-body-md">₹12,000</span>
+</li>
+<li class="flex justify-between items-end border-b border-surface-dim pb-2 group cursor-pointer hover:border-amber-600/30 transition-colors">
+<div class="space-y-1">
+<span class="block font-headline-sm text-headline-sm group-hover:text-amber-700 transition-colors">Keratin Treatment</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">120 mins</span>
+</div>
+<span class="font-body-md text-body-md">₹8,000</span>
+</li>
+</ul>
+</div>
+<!-- Skin & Aesthetics -->
+<div class="space-y-8">
+<h3 class="font-headline-md text-headline-md border-b border-taupe-200 pb-4">Skin &amp; Aesthetics</h3>
+<ul class="space-y-6">
+<li class="flex justify-between items-end border-b border-surface-dim pb-2 group cursor-pointer hover:border-amber-600/30 transition-colors">
+<div class="space-y-1">
+<span class="block font-headline-sm text-headline-sm group-hover:text-amber-700 transition-colors">Signature Radiance Facial</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">90 mins</span>
+</div>
+<span class="font-body-md text-body-md">₹5,500</span>
+</li>
+<li class="flex justify-between items-end border-b border-surface-dim pb-2 group cursor-pointer hover:border-amber-600/30 transition-colors">
+<div class="space-y-1">
+<span class="block font-headline-sm text-headline-sm group-hover:text-amber-700 transition-colors">Advanced Hydrafacial</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">60 mins</span>
+</div>
+<span class="font-body-md text-body-md">₹7,000</span>
+</li>
+<li class="flex justify-between items-end border-b border-surface-dim pb-2 group cursor-pointer hover:border-amber-600/30 transition-colors">
+<div class="space-y-1">
+<span class="block font-headline-sm text-headline-sm group-hover:text-amber-700 transition-colors">Aesthetic Consult</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">30 mins</span>
+</div>
+<span class="font-body-md text-body-md">₹1,500</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Portfolio Gallery -->
+<section class="py-section-padding bg-surface-container-low">
+<div class="px-6 md:px-margin-page max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg mb-4">Portfolio</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">A glimpse into our bridal transformations and signature looks.</p>
+</div>
+<!-- Simplified Bento/Masonry Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[300px]">
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden bg-surface-dim">
+<img alt="Bridal Look" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up portrait of an elegant Indian bride with flawless, radiant makeup and intricate traditional jewelry. The lighting is soft and flattering, highlighting her delicate features and glowing skin. The style embodies quiet luxury, focusing on natural beauty and refined details in a sophisticated, minimalist studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByGLLcFnwk_zykgWAc18jueNDO5zBlDf8H6Qg4MDLx6ifS_9ppfwT2YCqDzCxTGx2ZcbXL1Fu6DgAJBv6d6v_1L7Zt_5r36P-a1toR-qAcYfKPp1fB8VtVHwa90X8vhNBRVJlR-Ijr6TqkXSq8suNSxrKQxiNFmkJWU1Rw_hiRcU259T1Lujfe5niVd9CegWM7dtpXyXcsRlDccmEBWz2Iwck--b2Ji1F85HB6UiQ5ONdG-dIOkcJJHIZApPfa0Oy9ir0hYfLKRTA"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="text-white font-serif italic text-xl">Bridal Elegance</span>
+</div>
+</div>
+<div class="relative group overflow-hidden bg-surface-dim">
+<img alt="Hair Styling" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A detailed shot of beautifully styled, voluminous hair with subtle balayage highlights catching the light. The setting is bright and airy, typical of a high-end salon. The visual aesthetic is clean, modern, and luxurious, emphasizing the texture and health of the hair against a soft beige background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiEZ0E3THshO6ETdhZV09VH34jYJ1pgrEftavCEM1O_HzlZE1hbdyRAbw12hV1WsVQV8DlufKzsVOBtpX5VzoXFG54OWT-ep6AkuMthiFA4z2J5hEjl07AKH4anOCNzMEO2P6lqd_G3oKDTnGaEbLryuBzbY13K24UHOG7OdYFqUGbQaPPtWpAe-3S77FNHM6pTgdnKEeD4uT5w1eYF7pIrOykdc9SQLUrE-JpJVnc1X0-mWnlDZqk1fSuQ4f-ycsrx1tAzrHQiGY"/>
+</div>
+<div class="relative group overflow-hidden bg-surface-dim">
+<img alt="Nail Art" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A minimalist composition showing perfectly manicured hands with neutral, elegant nail polish resting on a soft textured fabric. Soft natural light creates gentle shadows. The overall mood is calm and pristine, reflecting a premium nail care experience within a quiet luxury environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlRih2lHEk-aon3OHAalNlR8lrw6Qj2ZXlVPSkpQfzE-bDn3TiWdDm81xdOKNhzLVHywBSNZ28c9Dz9g-yYztFlHXXR6mHHrQy7uenhLk1Hov-SfEns3qgfMwAevwB89wOV4nQjaNCvZcZ4MYuiz8sxlooGrvoW1oT-9nJXf1L4q9bgTI96ZKzwNd6woSN_oK3yK4GLVFHtXk6MdbjLC68gUu0GFPWOgP9GDFxQVQErBM44HG8MWbh0vBBh-gdiIu5oQfsbTnHvwE"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 flex flex-col md:flex-row justify-between items-center text-center gap-8 bg-stone-100 dark:bg-stone-900 border-t border-stone-200 dark:border-stone-800">
+<div class="font-serif text-lg tracking-tighter text-amber-600 dark:text-amber-500">
+            Aura Salon
+        </div>
+<div class="font-serif text-sm tracking-wide text-amber-600 dark:text-amber-500">
+            © 2024 Aura Salon Delhi. Defining Quiet Luxury.
+        </div>
+<nav class="flex gap-6 justify-center">
+<a class="font-serif text-sm tracking-wide text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 underline decoration-stone-300 transition-colors" href="#">Sustainability</a>
+<a class="font-serif text-sm tracking-wide text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 underline decoration-stone-300 transition-colors" href="#">Careers</a>
+<a class="font-serif text-sm tracking-wide text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 underline decoration-stone-300 transition-colors" href="#">Privacy Policy</a>
+<a class="font-serif text-sm tracking-wide text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 underline decoration-stone-300 transition-colors" href="#">Terms of Service</a>
+</nav>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-20 md:bottom-8 right-6 z-[70] bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 flex items-center justify-center" href="#">
+<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.347-.272.297-1.04 1.016-1.04 2.479 0 1.463 1.065 2.876 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+</svg>
+</a>
+</body></html>
