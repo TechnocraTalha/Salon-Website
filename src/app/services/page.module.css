@@ -1,0 +1,35 @@
+.hero {
+  padding: 80px 0;
+  background: var(--color-surface-container-low);
+}
+
+.heroContent {
+  max-width: 640px;
+}
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .categoriesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.categoryCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-outline-variant);
+  overflow: hidden;
+}
+
+.categoryImageWrap {
+  position: relative;
+  height: 300px;
+}
+
+.categoryContent {
+  padding: 24px;
+}

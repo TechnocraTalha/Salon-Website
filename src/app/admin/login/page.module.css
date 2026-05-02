@@ -1,0 +1,46 @@
+.loginPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface-container-low);
+  padding: 24px;
+}
+
+.loginCard {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 48px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.loginLogo {
+  font-family: var(--font-playfair), serif;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+
+.loginSubtitle {
+  color: var(--color-on-surface-variant);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 32px;
+}
+
+.errorBanner {
+  background: #fef2f2;
+  color: #991b1b;
+  padding: 12px;
+  border-radius: var(--radius-default);
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.loginForm {
+  text-align: left;
+}

@@ -1,0 +1,258 @@
+/* ================================
+   HOME PAGE STYLES
+   ================================ */
+
+/* HERO */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--color-surface-container-low);
+}
+
+.heroImageWrap {
+  position: absolute;
+  inset: 0;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.55;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(250,250,245,0.4) 0%,
+    rgba(250,250,245,0.9) 100%
+  );
+}
+
+.heroContent {
+  position: relative;
+  z-index: 10;
+  max-width: 720px;
+  text-align: center;
+  padding: 80px 24px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.heroTitle {
+  color: var(--color-on-surface);
+}
+
+.heroSubtitle {
+  color: var(--color-on-surface-variant);
+  max-width: 560px;
+}
+
+.heroCta {
+  padding-top: 16px;
+}
+
+.heroBtn {
+  padding: 18px 40px;
+  letter-spacing: 0.15em;
+}
+
+/* SECTION HEADERS */
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .sectionHeader { margin-bottom: 64px; }
+}
+
+/* SERVICES PREVIEW */
+.servicesSection {
+  background: var(--color-surface);
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px 96px;
+}
+
+@media (min-width: 1024px) {
+  .servicesGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.categoryTitle {
+  border-bottom: 1px solid var(--color-surface-dim);
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.serviceList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.serviceItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid var(--color-surface-dim);
+  padding-bottom: 12px;
+  cursor: pointer;
+  transition: border-color var(--transition-base);
+}
+
+.serviceItem:hover {
+  border-color: rgba(217,119,6,0.3);
+}
+
+.serviceItem:hover .serviceName {
+  color: var(--color-amber-700);
+}
+
+.serviceInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.serviceName {
+  transition: color var(--transition-base);
+}
+
+.viewAllWrap {
+  text-align: center;
+  margin-top: 48px;
+}
+
+/* PORTFOLIO GALLERY */
+.portfolioSection {
+  background: var(--color-surface-container-low);
+}
+
+.portfolioGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  grid-auto-rows: 300px;
+}
+
+@media (min-width: 768px) {
+  .portfolioGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .portfolioLarge {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+
+.portfolioItem {
+  position: relative;
+  background: var(--color-surface-dim);
+}
+
+.portfolioItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolioOverlay {
+  background: rgba(0,0,0,0.25);
+}
+
+.portfolioLabel {
+  color: white;
+  font-family: var(--font-playfair), 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
+/* TESTIMONIALS */
+.testimonialsSection {
+  background: var(--color-surface);
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .testimonialsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.testimonialCard {
+  padding: 40px 32px;
+  background: var(--color-surface-container-low);
+  border: 1px solid rgba(196,199,199,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quoteIcon {
+  font-family: var(--font-playfair), 'Playfair Display', serif;
+  font-size: 64px;
+  color: var(--color-secondary-fixed-dim);
+  line-height: 0.5;
+  opacity: 0.4;
+}
+
+.testimonialText {
+  color: var(--color-on-surface-variant);
+  flex: 1;
+}
+
+.testimonialFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-outline-variant);
+}
+
+/* CTA BANNER */
+.ctaSection {
+  padding: 64px 0;
+}
+
+@media (min-width: 768px) {
+  .ctaSection { padding: 96px 0; }
+}
+
+.ctaBox {
+  background: var(--color-surface-container-low);
+  padding: 64px 32px;
+  border: 1px solid rgba(196,199,199,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .ctaBox { padding: 96px 64px; }
+}

@@ -1,0 +1,40 @@
+.hero {
+  padding: 80px 0;
+  background: var(--color-surface-container-low);
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.gallery {
+  margin-top: 32px;
+}
+
+.galleryItem {
+  position: relative;
+  background: var(--color-surface-dim);
+}
+
+.galleryOverlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%);
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 24px;
+}
+
+.galleryInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
